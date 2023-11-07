@@ -76,7 +76,7 @@ const Robots = () => {
                                 Robots
                             </th>
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                                Experience
+                                DownLidar
                             </th>
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Status
