@@ -48,19 +48,19 @@ const TableData = ({ data }) => {
             {data.networkStrength === 'Strong' ? (
                 <td className="text-left px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-green-600 font-semibold">
-                        {data.networkStrength} ms
+                        {data.networkStrength} 
                     </div>
                 </td>
             ) : data.networkStrength === 'Medium' ?(
                 <td className="text-left px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-orange-400 font-semibold">
-                        {data.networkStrength} ms
+                        {data.networkStrength} 
                     </div>
                 </td>
             ) : (
                 <td className="text-left px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-red-600 font-semibold">
-                        {data.networkStrength} ms
+                        {data.networkStrength} 
                     </div>
                 </td>
             )}
