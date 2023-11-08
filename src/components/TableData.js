@@ -42,7 +42,7 @@ const TableData = ({ data }) => {
             </td> */}
             <td className="text-left px-6 py-4 whitespace-nowrap">
                 <div className="text-sm text-gray-600 font-semibold">
-                    {data.IPAddress}
+                    {data.downLidar}
                 </div>
             </td>
             {data.networkStrength === 'Strong' ? (
