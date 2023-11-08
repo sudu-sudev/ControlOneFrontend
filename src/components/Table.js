@@ -40,7 +40,7 @@ const Table = () => {
 
     console.log(activeRobots)
     return (
-        <div className="flex shadow border-b mt-2 rounded-xl overflow-x-auto max-h-44 mr-4 ml-4">
+        <div className="flex shadow border-b mt-2 rounded-xl overflow-x-auto max-h-80 mr-4 ml-4">
             <table className="min-w-full">
                 <thead>
                     <tr>
