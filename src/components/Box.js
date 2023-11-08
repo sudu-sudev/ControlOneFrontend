@@ -3,7 +3,7 @@ import React from 'react'
 const Box = ({ title, icon, completed, height, width, xl }) => {
     return (
         <div
-            className={`h-${height} w-${width}  xl:w-${xl}  bg-slate-800 shadow-xl rounded-xl hover:bg-slate-700`}
+            className={`h-${height} w-${width}  xl:w-${xl}  bg-slate-800 shadow-xl rounded-xl hover:bg-slate-700 hover:scale-105 transition ease-in-out delay-150`}
         >
             <div className="p-5 text-white">
                 <div className="">
