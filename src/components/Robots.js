@@ -76,7 +76,7 @@ const Robots = () => {
                                 Robots
                             </th>
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                                Down Lidar
+                                Steering Status
                             </th>
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Status
@@ -94,7 +94,7 @@ const Robots = () => {
                             </th>
 
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                                Ip Address
+                                Down Lidar
                             </th>
                             <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Network strength
