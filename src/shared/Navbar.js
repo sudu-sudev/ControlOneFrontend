@@ -52,7 +52,7 @@ const Navbar = () => {
                         </div>
                     </Link>
                             <button
-                    className="w-8 h-8 flex justify-center items-center dark:bg-slate-500 bg-slate-200 dark:text-white  text-black text-xl rounded-full m-1"
+                    className="w-full h-8 flex justify-center items-center dark:bg-slate-500 bg-slate-200 dark:text-white  text-black text-xl rounded-full m-1"
                     onClick={() => setTheme(!theme)}
                 >
                     {theme === true ? <BsFillSunFill /> : <BsFillMoonFill />}
