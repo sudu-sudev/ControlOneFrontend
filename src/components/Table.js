@@ -35,29 +35,29 @@ const Table = () => {
         fetchData();
         const interval = setInterval(fetchData, 1000); 
         return () => clearInterval(interval);  
-    },[])
+     },[])
     let activeRobots = data.filter(active => active.status === 'Active');
 
     console.log(activeRobots)
     return (
-        <div className="flex shadow border-b mt-2 rounded-xl overflow-x-auto max-h-80 mr-4 ml-4">
+        <div className="flex shadow border-b mt-2 rounded-xl overflow-x-auto min-h-80 mr-4 ml-4">
             <table className="min-w-full">
                 <thead>
                     <tr>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                        <th className="sticky bg-gray-200 dark:bg-white  top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Id
                         </th>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Robots
                         </th>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                            Steering Status
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            Down Lidar
                         </th>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Status
                         </th>
                         <th
-                            className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2 cursor-pointer hover:bg-gray-50"
+                            className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2 cursor-pointer hover:bg-gray-50"
                             onClick={() => sorting('batteryStatus')}
                         >
                             <div className="flex items-center">
@@ -68,18 +68,18 @@ const Table = () => {
                             </div>
                         </th>
 
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                            Down Lidar
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            Ip Address
                         </th>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Network strength
                         </th>
-                        <th className="sticky bg-gray-100 top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                        <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Access
                         </th>
                     </tr>
                 </thead>
-                <tbody className="bg-gray-200">
+                <tbody className="bg-white dark:bg-gray-200">
                     {data?.map((activeRobot) => (
                         <TableData data={activeRobot} key={activeRobot.id} />
                     ))}
