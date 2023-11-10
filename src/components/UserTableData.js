@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserTableData = ({ data }) => {
     return (
-        <tr>
+        <tr className="border-b dark:border-b-gray-300 hover:bg-gray-100">
             <td className="text-center px-6 py-4 whitespace-nowrap">
                 <div className="text-sm text-gray-600 font-semibold uppercase">
                     {data.id}
