@@ -49,7 +49,7 @@ const Robots = () => {
     )
 
     return (
-        <div className="bg-slate-600  h-screen">
+        <div className="dark:bg-slate-600 bg-stone-100  h-screen">
             <div className="p-5 text-white  font font-semibold flex justify-between">
                 <div className="text-orange-400 font-bold text-3xl">
                     All Robots
@@ -57,7 +57,7 @@ const Robots = () => {
                 <div className="flex items-center">
                     <AiOutlineSearch className="absolute text-gray-500 h-6 w-6 pl-2" />
                     <input
-                        className="text-black h-7  rounded-lg border text-base px-3 pl-7 py-1 focus:outline-none focus:ring-0 focus:border-gray-700"
+                        className="text-black h-9  rounded-lg border text-base px-3 pl-7 py-1 focus:outline-none focus:ring-0 focus:border-gray-700"
                         type="text"
                         placeholder="Search by Name"
                         onChange={handleChange}
@@ -65,24 +65,24 @@ const Robots = () => {
                 </div>
             </div>
 
-            <div className="flex shadow border-b mt-2 rounded-xl overflow-hidden mr-4 ml-4 ">
+            <div className="flex shadow-2xl border-b mt-2 rounded-xl overflow-x-auto max-h-screen mb-6 mr-4 ml-4 ">
                 <table className="min-w-full ">
-                    <thead className="bg-gray-100 ">
+                    <thead className=" ">
                         <tr>
-                            <th className="text-left font-medium   text-gray-600 uppercase py-3 px-6 border-r-2">
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium   text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Id
                             </th>
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Robots
                             </th>
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                                Steering Status
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                                Experience
                             </th>
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Status
                             </th>
                             <th
-                                className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2 cursor-pointer hover:bg-gray-50"
+                                className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2 cursor-pointer hover:bg-gray-50"
                                 onClick={() => sorting('Battery')}
                             >
                                 <div className="flex items-center">
@@ -93,18 +93,18 @@ const Robots = () => {
                                 </div>
                             </th>
 
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                                Down Lidar
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                                Ip Address
                             </th>
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Network strength
                             </th>
-                            <th className="text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
+                            <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                                 Access
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="bg-gray-200">
+                    <tbody className="bg-white dark:bg-gray-200">
                         {filteredData?.map((activeRobot) => (
                             <TableData
                                 data={activeRobot}
