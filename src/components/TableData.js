@@ -27,13 +27,13 @@ const TableData = ({ data }) => {
             {data.batteryStatus > 30 ? (
                 <td className="text-left px-6 py-4 whitespace-nowrap ">
                     <div className="text-sm text-green-600 font-semibold">
-                        {data.batteryStatus}%
+                        {data.steeringStatus}%
                     </div>
                 </td>
             ) : (
                 <td className="text-left px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-red-600 font-semibold">
-                        {data.batteryStatus}%
+                        {data.steeringStatus}%
                     </div>
                 </td>
             )}
@@ -42,7 +42,7 @@ const TableData = ({ data }) => {
             </td> */}
             <td className="text-left px-6 py-4 whitespace-nowrap">
                 <div className="text-sm text-gray-600 font-semibold">
-                    {data.IPAddress}
+                    {data.pedalValue}
                 </div>
             </td>
             {data.networkStrength === 'Strong' ? (
