@@ -61,7 +61,7 @@ const Table = () => {
                             onClick={() => sorting('batteryStatus')}
                         >
                             <div className="flex items-center">
-                                Battery
+                                Steering
                                 <span>
                                     <FaSort className="ml-2" />
                                 </span>
@@ -69,7 +69,7 @@ const Table = () => {
                         </th>
 
                         <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
-                            Ip Address
+                            pedalValue
                         </th>
                         <th className="sticky bg-gray-200 dark:bg-white top-0 text-left font-medium text-gray-600 uppercase py-3 px-6 border-r-2">
                             Network strength
